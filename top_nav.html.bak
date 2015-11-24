@@ -1,0 +1,30 @@
+<html>
+<head>
+<center>
+<table width="100%">
+<tr>
+<th><img src="images/z1.png" alt="Smiley face" height="50" width="80"></th>
+<th><h2><center>E-SHOPING</center></h2></th><br>
+<th><img src="images/z3.png" alt="Smiley face" height="50" width="80"></th>
+</tr>
+</table>
+</center>
+
+<title>E-SHOPING</title>
+<style type="text/css">
+body {
+	font-family:verdana,arial,sans-serif;
+	font-size:8pt;
+	margin:8px;
+	background-color:#bbd1f7;
+	}
+</style>
+</head>
+<body>
+<!-- <h3>Top Navbar</h3> -->
+
+<p><center>
+
+<a href="home.jsp" target="content"><font size="+1">Home</a>&nbsp;&nbsp; | <a href="aboutus.jsp" target="content">About Us</a>&nbsp;&nbsp; |&nbsp;&nbsp; <a href="contact.jsp" target="content">   Contact  </a>&nbsp;&nbsp;&nbsp;&nbsp;</center></p>
+</body>
+</html>

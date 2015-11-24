@@ -1,0 +1,67 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+<style type="text/css">
+    a.fancybox img {
+        border: none;
+        box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+        -o-transform: scale(1,1); -ms-transform: scale(1,1); -moz-transform: scale(1,1); -webkit-transform: scale(1,1); transform: scale(1,1); -o-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;
+    } 
+    a.fancybox:hover img {
+        position: relative; z-index: 999; -o-transform: scale(1.03,1.03); -ms-transform: scale(1.03,1.03); -moz-transform: scale(1.03,1.03); -webkit-transform: scale(1.03,1.03); transform: scale(1.03,1.03);
+    }
+</style>
+
+</head>
+<body>
+<center>
+<table style="width:100%" >
+  <br><br><tr>
+    <td><center><img class="fancybox" src="images/c1.png" alt="Smiley face" title="Model: AMD Sempron LE145 Processor Based PC" Monitor, USB Keyboard & Mouse" height="150" width="150"><p><a href="c1.html">Visit hear for more details</a><p></td>
+
+    <td><center><img class="fancybox" src="images/c2.png" alt="Smiley face" title="Model: AMD Liano A4 4000 Processor Based PC" height="150" width="150"><p><a href="c2.html">Visit hear for more details</a><p></center></td> 
+
+    <td><center><img class="fancybox" src="images/c3.png" alt="Smiley face" title="Model: Intel Dual Core G2020 Processor Based PC" height="150" width="150"><p><a href="c3.html">Visit hear for more details</a><p></center></td>
+
+	<td><center><img class="fancybox" src="images/c4.png" alt="Smiley face" title="Model: Intel Core i3 3220 Processor Based PC" height="150" width="150"><p><a href="c4.html">Visit hear for more details</a><p></center></td>
+  </tr>
+  <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+  <tr>
+    <td><center><img class="fancybox" src="images/c5.png" alt="Smiley face" title="Model: Intel Core i5-4440 Processor Based PC" height="150" width="150"><p><a href="c5.html">Visit hear for more details</a><p></center></td>
+
+	<td><center><img class="fancybox" src="images/c6.png" alt="Smiley face" title="Model: Budget PC with AMD Sempron LE145 Processor" height="150" width="150"><p><a href="c6.html">Visit hear for more details</a><p></center></td>
+
+	<td><center><img class="fancybox" src="images/c7.png" alt="Smiley face" title="Model: Budget PC with AMD Sempron LE146 Processor" height="150" width="150"><p><a href="c7.html">Visit hear for more details</a><p></center></td>
+
+	<td><center><img class="fancybox" src="images/c8.png" alt="Smiley face" title="Model: Budget PC with AMD Sempron LE136 Processor" height="150" width="150"><p><a href="c8.html">Visit hear for more details</a><p></center></td>
+  </tr>
+
+ 
+</table>
+</center>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+<script type="text/javascript">
+    $(function($){
+        var addToAll = false;
+        var gallery = true;
+        var titlePosition = 'inside';
+        $(addToAll ? 'img' : 'img.fancybox').each(function(){
+            var $this = $(this);
+            var title = $this.attr('title');
+            var src = $this.attr('data-big') || $this.attr('src');
+            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+            $this.wrap(a);
+        });
+        if (gallery)
+            $('a.fancybox').attr('rel', 'fancyboxgallery');
+        $('a.fancybox').fancybox({
+            titlePosition: titlePosition
+        });
+    });
+    $.noConflict();
+</script>
+</body>
+</html>
